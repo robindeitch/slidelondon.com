@@ -1,0 +1,128 @@
+/* + - + - + - + - + - + - + - + */
+/*                               */
+/*      (c) Slide Ltd 2013       */
+/*    http://slidelondon.com     */
+/*                               */
+/* + - + - + - + - + - + - + - + */
+div, h1, h2, h3, h4, p, table, tbody, td, tr, a, a:visited, a:hover, img, ul, li, hr, form, blockquote, cite {
+	margin:0; padding:0; border:none 0 #ffffff; text-decoration:none; list-style-type:none;
+}
+h1, h2, h3, h4 {
+	font-weight:normal;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	text-align: left;
+	font-size:13px;
+	line-height:1.231;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	word-spacing: 0;
+}
+
+.strong{
+    font-weight:bold;
+}
+
+.debug {
+    position:fixed;
+	top:10px;
+	left:10px;
+	width:400px;
+	height:100px;
+	color:#ffff00;
+}
+
+.bg {
+    position:fixed;
+	top:0;
+	left:0;
+    z-index:-9999;
+	/*overflow:auto;*/
+}
+.bg img {
+    position:fixed;
+	overflow:auto;
+}
+
+
+.bgwidth { width:100%; height:auto; }
+.bgheight { width:auto; height:100%; }
+
+.logo {
+	position:fixed;
+	bottom:10px;
+	left:10px;
+	width:150px;
+	height:130px;
+	padding:0;
+    z-index:1;
+}
+.logobackground {
+	position:absolute;
+	width:100%;
+	height:100%;
+	/*background:transparent url('logobackground.png') no-repeat scroll left top;
+	zoom:1;*/
+	filter:alpha(opacity=40);
+	opacity:0.4;
+}
+.logotext {
+	position:absolute;
+	width:100%;
+	height:100%;
+	/*background:transparent url('logo.png') no-repeat scroll left top;*/
+}
+
+#text {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: rgb(0, 0, 0) transparent;
+    background: rgba(0, 0, 0, 0.55);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8C000000, endColorstr=#8C000000)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8C000000, endColorstr=#8C000000);
+    padding:0; margin:0;
+}
+
+#text p { color:#a8bf0d; padding:10px 30px 10px 30px; font-family: 'Gudea', Arial, sans-serif; font-weight: 400; text-align:left; }
+#text h2, #text h3, #text h4 { color:#dffe11; margin:30px 10px 20px 10px; }
+#text h2 { font-size:1em; font-family:"PT Sans", sans-serif; font-weight:400; font-style:italic; }
+#text h3 { font-size:1em; font-family:'PT Sans Narrow', sans-serif; font-weight:400; text-align:center; margin-left:auto; margin-right:auto; }
+#text .lineB { display:block; font-size:1.6em; }
+
+.headerb { display:block; }
+
+.listinner { display:block; }
+
+ul { margin:4px 30px 10px 30px; font-size:1.1em; }
+li.listy { display:inline; color:#dffe11; font-size:1.33em; font-weight:bold; }
+li.listy + li.listy:before { content: " | "; }
+.listyitem { color:#a8bf0d; font-size:0.75em; font-family: 'Gudea', Arial, sans-serif; font-weight: 400;  }
+
+#likebutton { padding:0 30px 6px 30px; text-align:right; }
+
+.hidden{ display:none; }
+
+#checkerboard { position:absolute; width:100%; height:100%; border:0 solid #000000; border-collapse:collapse; table-layout:fixed; }
+tr {  }
+td {  }
+
+a { color:#dffe11; text-decoration:underline; }
+a:hover { color:#a8bf0d; }
+.tel { color:#dffe11; }
+
+#text p.talktous { font-size:1.2em; }
+#text p.footer { text-align:right; color:#dffe11; }
